@@ -1,0 +1,71 @@
+body{
+  height: 700px;
+}
+#game{
+  width:700px;
+  height:300px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 103px;
+}
+
+#fundo{
+  width:700px;
+  height:300px;
+  margin-top: 0px;
+  border: 1px solid black;
+  position: absolute;
+}
+
+#character, img{
+  width: 80px;
+  height: 100px;
+  position: relative;
+  top: 103px; 
+}
+
+
+@keyframes jump{
+  0%{top: 50px;}
+  30%{top: 30px;}
+  70%{top: 20px;}
+  100%{top: 50px;}
+}
+
+.animate{
+  animation: jump 250ms linear;
+}
+
+#block{
+  width: 10px;
+  height: 20px;
+  background-color: black;
+  position: relative;
+  top: 180px;
+  left: 690px;
+  animation: block 1s infinite linear;
+}
+
+#cano {
+  width: 40px;
+  height: 50px;
+  position: relative;
+  top: -30px;
+  left: -5px;
+  position: absolute;
+}
+
+@keyframes block{
+  0%{left: 700px}
+  100%{left: 0px} 
+}
+
+#back{
+  width: 80%;
+  height: 400px;
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
